@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:task="http://www.springframework.org/schema/task" xmlns:security="http://www.springframework.org/schema/security"
+	xmlns:ehcache="http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+    http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.1.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+    http://www.springframework.org/schema/security  http://www.springframework.org/schema/security/spring-security.xsd
+    http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring/ehcache-spring-1.1.xsd">
+
+	<!-- 启用注解 -->
+	<context:annotation-config />
+	<!-- 让spring自动扫描指定包类中的注解 -->
+	<context:component-scan base-package="com.yll.springmvc" />
+
+	<!--spring security配置-->
+	<!--引入JavaConfig类-->
+	<!--<bean class="com.yll.springmvc.config.SecurityConfig"/>-->
+	<!--auto-config="true"使用内置的登录页-->
+
+
+	<!--<security:http pattern="/user/loginPage" security="none"/>
+	<security:http auto-config="false">
+		<security:intercept-url pattern="/user/loginPage" access="hasRole('IS_AUTHENTICATED_ANONYMOUSLY')"/>
+		<security:intercept-url pattern="/log/**" access="hasRole('ROLE_ADMIN')"/>
+		<security:intercept-url pattern="/user/*" access="hasRole('ROLE_USER')"/>
+		<security:csrf disabled="true"/>
+		<security:form-login login-page="/user/loginPage" login-processing-url="/j_spring_security_check"
+							 authentication-failure-url="/user/loginPage?error=true" default-target-url="/log/listLogByPage" always-use-default-target="true" />
+		<security:logout invalidate-session="true" logout-success-url="/user/loginPage" logout-url="/j_spring_security_logout"/>
+		&lt;!&ndash;<security:form-login always-use-default-target="true" login-page="/user/login"/>&ndash;&gt;
+	</security:http>
+	<security:authentication-manager>
+		<security:authentication-provider>
+			&lt;!&ndash;基于数据库表存储的用户认证 必须查询name,password,status这3列&ndash;&gt;
+			&lt;!&ndash;users-by-username-query：根据用户名查找用户，若查到有效用户则认证通过&ndash;&gt;
+			&lt;!&ndash;authorities-by-username-query：根据用户名查找权限，若查到的权限匹配access则认证通过&ndash;&gt;
+			<security:jdbc-user-service data-source-ref="dataSource"
+				users-by-username-query="SELECT name,password,status as enabled FROM USER WHERE name= ?"
+				authorities-by-username-query="SELECT user.name,role.name FROM user,role,user_role WHERE user.id=user_role.user_id AND
+				user_role.role_id=role.id and user.name = ?"/>
+
+			&lt;!&ndash;基于内存存储的用户认证&ndash;&gt;
+			&lt;!&ndash;<security:user-service>
+				<security:user name="admin" password="admin" authorities="ROLE_ADMIN,ROLE_USER"/>
+				<security:user name="duomu" password="123" authorities="ROLE_USER"/>
+			</security:user-service>&ndash;&gt;
+		</security:authentication-provider>
+	</security:authentication-manager>-->
+
+
+	<!-- 导入spring和mybatis的整合配置文件，必须是类加载路径 -->
+	<import resource="classpath:spring/applicationContext-mybatis.xml" />
+</beans>

@@ -1,0 +1,3 @@
+com\yll\springdata\App.class
+com\yll\springdata\entity\User.class
+com\yll\springdata\repository\UserRepository.class
