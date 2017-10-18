@@ -23,7 +23,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <springframework.version>4.3.0.RELEASE</springframework.version>
         <springframework.security.version>4.2.3.RELEASE</springframework.security.version>
-        <springframework.data.version>2.0.0.RELEASE</springframework.data.version>
         <profiles.dir>src/profiles</profiles.dir>
     </properties>
 
@@ -120,12 +119,6 @@
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-taglibs</artifactId>
                 <version>${springframework.security.version}</version>
-            </dependency>
-            <!--spring-data-->
-            <dependency>
-                <groupId>org.springframework.data</groupId>
-                <artifactId>spring-data-jpa</artifactId>
-                <version>${springframework.data.version}</version>
             </dependency>
 
             <!-- 日志组件 -->

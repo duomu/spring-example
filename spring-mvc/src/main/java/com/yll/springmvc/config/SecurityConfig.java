@@ -55,5 +55,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
                 .key("user")
                 .and()
                 .csrf();//启用csrf则登出必须使用post请求
+
     }
 }
