@@ -13,7 +13,7 @@ public class RedisMainTest {
     private static final Logger logger = LoggerFactory.getLogger(RedisMainTest.class);
 
     public static void main(String[] args) {
-        Jedis jedis = new Jedis("192.168.229.132", 6379);
+        Jedis jedis = new Jedis("test.redis.com", 6379);
         jedis.auth("123456");
         jedis.set("name", "duomu");
         String name = jedis.get("name");

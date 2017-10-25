@@ -4,10 +4,12 @@ D:\AllProjects\project-new\git\example\spring-mvc\src\main\java\com\yll\springmv
 D:\AllProjects\project-new\git\example\spring-mvc\src\main\java\com\yll\springmvc\service\IUserService.java
 D:\AllProjects\project-new\git\example\spring-mvc\src\main\java\com\yll\springmvc\config\SecurityWebInitializer.java
 D:\AllProjects\project-new\git\example\spring-mvc\src\main\java\com\yll\springmvc\entity\User.java
+D:\AllProjects\project-new\git\example\spring-mvc\src\main\java\com\yll\springmvc\config\RedisConfig.java
 D:\AllProjects\project-new\git\example\spring-mvc\src\main\java\com\yll\springmvc\config\SecurityConfig.java
 D:\AllProjects\project-new\git\example\spring-mvc\src\main\java\com\yll\springmvc\web\UserController.java
 D:\AllProjects\project-new\git\example\spring-mvc\src\main\java\com\yll\springmvc\mapper\LogMapper.java
 D:\AllProjects\project-new\git\example\spring-mvc\src\main\java\com\yll\springmvc\service\impl\LogServiceImpl.java
+D:\AllProjects\project-new\git\example\spring-mvc\src\main\java\com\yll\springmvc\config\CachingConfig.java
 D:\AllProjects\project-new\git\example\spring-mvc\src\main\java\com\yll\springmvc\entity\LogExample.java
 D:\AllProjects\project-new\git\example\spring-mvc\src\main\java\com\yll\springmvc\service\impl\UserServiceImpl.java
 D:\AllProjects\project-new\git\example\spring-mvc\src\main\java\com\yll\springmvc\service\ILogService.java

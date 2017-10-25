@@ -17,7 +17,7 @@ public class RedisConfig {
     @Bean(name = "redisConnectionFactory")
     public RedisConnectionFactory redisConnectionFactory() {
         JedisConnectionFactory jcf = new JedisConnectionFactory();
-        jcf.setHostName("192.168.229.132");
+        jcf.setHostName("test.redis.com");
         jcf.setPort(6379);
         jcf.setPassword("123456");
         return jcf;

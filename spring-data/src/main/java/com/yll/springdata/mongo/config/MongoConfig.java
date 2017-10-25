@@ -34,6 +34,7 @@ public class MongoConfig extends AbstractMongoConfiguration {
     @Override
     public Mongo mongo() throws Exception {
         MongoCredential credential = MongoCredential.createCredential("duomu", "mydb", "123456".toCharArray());
+        //TODO ip使用域名代替
         return new MongoClient(new ServerAddress("192.168.229.132", 27017), Arrays.asList(credential));
     }
 
