@@ -12,7 +12,7 @@
         <module>spring-aop</module>
         <module>design-model</module>
         <module>java</module>
-        <module>rocketmq</module>
+        <module>message</module>
         <module>redis</module>
         <module>algorithm</module>
         <module>spring-mvc</module>

@@ -26,6 +26,7 @@
         <module name="algorithm" />
         <module name="design-model" />
         <module name="java" />
+        <module name="message" />
         <module name="redis" />
         <module name="rocketmq" />
         <module name="spring-aop" />
@@ -34,13 +35,13 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="algorithm" target="1.5" />
-      <module name="design-model" target="1.5" />
-      <module name="example" target="1.5" />
-      <module name="java" target="1.5" />
-      <module name="redis" target="1.5" />
-      <module name="rocketmq" target="1.5" />
-      <module name="spring-aop" target="1.5" />
+      <module name="algorithm" target="1.8" />
+      <module name="design-model" target="1.8" />
+      <module name="example" target="1.8" />
+      <module name="java" target="1.8" />
+      <module name="message" target="1.8" />
+      <module name="redis" target="1.8" />
+      <module name="spring-aop" target="1.8" />
       <module name="spring-data" target="1.8" />
       <module name="spring-mvc" target="1.8" />
     </bytecodeTargetLevel>
