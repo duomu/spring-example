@@ -24,4 +24,5 @@ spring-data-redis版本和jedis不兼容，降低版本
 5.redis protected-mode配置用于设置禁止公网访问redis，加强redis安全
 启用条件有两个：1）没有bind ip 2）没有设置访问密码，如果启用了则只能使用lookback ip(127.0.0.1)访问redis，如果是外网访问则会报错
 
-
+test git
+hello world
