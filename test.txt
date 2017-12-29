@@ -5,3 +5,5 @@ second test
 third test
 
 测试分支
+
+测试分支冲突
