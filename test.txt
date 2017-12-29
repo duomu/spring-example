@@ -7,3 +7,4 @@ third test
 测试分支冲突
 
 测试分支冲突呃呃呃
+test branch conflicts
