@@ -10,3 +10,5 @@ third test
 test branch conflicts
 
 测试分支冲突2
+
+test branch conflicts 2
