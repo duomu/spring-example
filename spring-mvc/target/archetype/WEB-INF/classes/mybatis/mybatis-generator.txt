@@ -1,2 +1,0 @@
-#使用mybatis-generator生成model、mapper、sql映射文件
-mvn mybatis-generator:generate

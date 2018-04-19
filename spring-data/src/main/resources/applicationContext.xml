@@ -30,4 +30,6 @@
 		<property name="checkoutTimeout" value="30000"/>
 		<property name="testConnectionOnCheckout"  value="false" />	<!-- 关闭每个connection提交的 时候都将校验其有效性 -->
 	</bean>
+
+	<import resource="spring-config-redis.xml"/>
 </beans>

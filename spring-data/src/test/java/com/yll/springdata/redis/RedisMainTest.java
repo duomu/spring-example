@@ -13,9 +13,9 @@ public class RedisMainTest {
     private static final Logger logger = LoggerFactory.getLogger(RedisMainTest.class);
 
     public static void main(String[] args) {
-        Jedis jedis = new Jedis("test.redis.com", 6379);
+        Jedis jedis = new Jedis("dev.com", 6379);
         jedis.auth("123456");
-        jedis.set("name", "duomu");
+        jedis.set("name", "simba");
         String name = jedis.get("name");
         logger.info("name：" + name);
     }

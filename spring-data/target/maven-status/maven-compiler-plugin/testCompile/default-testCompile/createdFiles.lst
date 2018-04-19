@@ -1,5 +1,0 @@
-com\yll\springdata\jpa\repository\UserRepositoryTest.class
-com\yll\springdata\redis\RedisTest.class
-com\yll\springdata\redis\RedisMainTest.class
-com\yll\springdata\mongo\repository\MongoMainTest.class
-com\yll\springdata\mongo\repository\MongoRepositoryTest.class

@@ -8,6 +8,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import sun.misc.Unsafe;
 
 import java.util.List;
 
@@ -26,7 +28,7 @@ public class UserServiceImpl implements IUserService {
         return userMapper.selectByPrimaryKey(userId);
     }
 
-    @Cacheable(value = "userCache")
+//    @Cacheable(value = "userCache")
     @Override
     public List<User> getUserByName(String name) {
         logger.info("缓存中没有，查数据库.....");
@@ -36,7 +38,19 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
+    @Transactional
     public Integer insertUser(User user) {
-        return userMapper.insert(user);
+        int result = userMapper.insert(user);
+//        try {
+//            int i = 1 / 0;
+//        } catch (Exception e) {
+//            System.out.println(e.getMessage());
+//        }
+
+        List<User> users = getUserByName("锅巴3");
+        if (users != null && users.size() > 0) {
+            System.out.println("size：" + users.size());
+        }
+        return result;
     }
 }

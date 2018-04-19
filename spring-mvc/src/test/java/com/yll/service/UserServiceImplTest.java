@@ -37,5 +37,14 @@ public class UserServiceImplTest {
         }
     }
 
+    @Test
+    public void testAddUser() {
+        User user = new User();
+        user.setName("锅巴3");
+        user.setStatus(1);
+        user.setPassword("pwd");
+        userService.insertUser(user);
+    }
+
 
 }

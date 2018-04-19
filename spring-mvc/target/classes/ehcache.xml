@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ehcache>
-    <diskStore path="java.io.tmpdir"/>
-    <cache name="userCache" maxBytesLocalHeap="50m" timeToLiveSeconds="100"/>
-</ehcache>

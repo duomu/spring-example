@@ -66,7 +66,8 @@
         <property name="dataSource" ref="dataSource" />  
     </bean>
     <!-- 在dao中需要使用@Transactional注解 -->
-    <!-- <tx:annotation-driven transaction-manager="transactionManager" /> -->
+	<!--开启注解事务支持-->
+	<tx:annotation-driven transaction-manager="transactionManager" />
     
     <!-- 事务管理2:配置事务增强处理bean-->
     <!-- <tx:advice id="txAdvice" transaction-manager="transactionManager">
