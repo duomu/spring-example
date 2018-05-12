@@ -17,7 +17,8 @@
     <!--控制输出的日志级别-->
     <!--root default level：DEBUG-->
     <root>
-        <level value="DEBUG" />
+        <!--<level value="DEBUG" />-->
+        <level value="OFF" />
         <appender-ref ref="STDOUT" />
     </root>
 </configuration>

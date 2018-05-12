@@ -134,6 +134,8 @@ public class RedisTest {
             logger.info("缓存中存在，打印数据");
             print(users);
         }
+
+        redisTemplate.delete("users");
     }
 
     @Test

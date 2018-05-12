@@ -161,7 +161,7 @@
 
         <!-- 日志组件 -->
         <!--slf4j绑定log4j，传递依赖 slf4j-api、log4j-->
-        <dependency>
+        <!--<dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
             <exclusions>
@@ -174,7 +174,7 @@
                     <artifactId>log4j</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
+        </dependency>-->
         <!--slf4j绑定logback-classic，传递依赖slf4j-api 1.7.25、logback-core 1.2.3-->
         <dependency>
             <groupId>ch.qos.logback</groupId>
