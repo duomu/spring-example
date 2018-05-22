@@ -17,7 +17,7 @@ import java.util.List;
  * Author：linlin.yang
  * Date：2017/5/15 18:04
  */
-@Service
+@Service("userService")
 public class UserServiceImpl implements IUserService {
     private static final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
     @Autowired

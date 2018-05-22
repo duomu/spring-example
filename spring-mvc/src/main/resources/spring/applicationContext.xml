@@ -21,6 +21,10 @@
 	<!-- 让spring自动扫描指定包类中的注解 -->
 	<context:component-scan base-package="com.yll.springmvc" />
 
+	<bean id="car" class="com.yll.springmvc.dto.CarFactoryBean">
+		<property name="carInfo" value="奔驰,100,200000"/>
+	</bean>
+
 	<!--启用注解驱动的缓存-->
 	<!--<cache:annotation-driven/>
 

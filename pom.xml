@@ -13,7 +13,6 @@
         <module>design-model</module>
         <module>java</module>
         <module>message</module>
-        <module>redis</module>
         <module>algorithm</module>
         <module>spring-mvc</module>
         <module>spring-data</module>
