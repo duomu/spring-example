@@ -152,6 +152,11 @@ public class RedisTest {
         logger.info("name={},age={},address={}", user.getName(), user.getAge(), user.getAddress());
     }
 
+    @Test
+    public void testTransaction() {
+
+    }
+
     public static void print(Map<String, User> resultMap) {
         if (resultMap == null) {
             return;
