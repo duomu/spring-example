@@ -24,7 +24,7 @@ public class ImageTest {
         BufferedImage image = null;
 
         try {
-            URL url = new URL("https://www.yooli.com/v2/local/img/common/logo.png");
+            URL url = new URL("https://www.baidu.com/img/baidu_jgylogo3.gif");
             image = ImageIO.read(url);
 
             ImageIO.write(image, "jpg", new File("E:\\test.jpg"));
